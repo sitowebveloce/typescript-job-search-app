@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <link rel="icon" type="image/png" href="./dist/imgs/job-search.png">
+    <link rel="stylesheet" href="./dist/main.css">
+    <script src="./src/index.ts" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="job-main-title">Ts Job Search</h1>
+        <form autocomplete="off">
+            <div class="input-group">
+                <label for="job">Job</label>
+                <input class="input-job" type="text" name="job" id="job" placeholder="Job search">
+            </div>
+            <div class="input-group">
+                <label for="city">City</label>
+                <input class="input-city" type="text" name="city" id="city" placeholder="City" required>
+            </div>
+            <button class="btn-search">Search</button>
+        </form>
+        
+    </header>
+        <div class="container">
+            <div class="loading"><div></div> <div></div> <div></div></div>
+            <div class="results">
+                
+                <!-- <div class='job-card show'>
+                    <h2 class='job-title'>Frontend Developer</h2>
+                    <div class='job-created'><strong>Created: </strong> 27/7/2022</div>
+                    <div class='job-desc'><strong>Desc: </strong> Senior Frontend Developer (Vue, Nuxt, UI) - Remote/Hybrid London Day rate: £400 - £600 (OUTSIDE IR35) Duration: 1 - 3 months Start: ASAP My exciting new client is looking for a Senior UI Engineer with proven commercial experience in Vue and Nuxt (using Typescript)</div>
+                    <div class='job-grid'>
+                            <div class='job-left'>
+                                <div class='job-comp'><strong>Company: </strong> Number One</div>
+                                <div class='job-location'><strong>Location: </strong> London, UK</div>
+                                <div class='job-cat'><strong>Category: </strong> IT </div>
+                                <div class='job-contract'><strong>Contract: </strong> undefined </div>
+                                <div class='job-sal'><strong>Min-Max: </strong> 40.000 - 50.000</div>
+                                <div class='job-link'><a href='https://www.monster.co.uk/jobs/search?q=Senior-Frontend-Developer-Vue-Nuxt-UI---London&where=London&page=1&id=b6118dc5-d889-4afc-81e1-12d9a34068ce&utm_medium=feeds_boards&utm_term=rented&utm_content=prospecting&utm_source=adzuna&utm_campaign=olm_sk_feed_adzuna_p1_uk' target='blank'>Apply</a></div>
+                            </div>
+                            <div class='job-right job-map'>
+                                <img loading="lazy" src='./dist/imgs/london_300x200@2x.png' alt="Map">
+                            </div>
+                    </div>
+                </div>  -->
+
+            </div>
+        </div>
+    <footer>
+        &copy; Ts Job Search
+    </footer>
+</body>
+</html>
