@@ -63,7 +63,6 @@ header form{
     height: auto;
     padding: 4px;
     opacity: 1;
-    visibility: visible;
     transition: opacity 500ms ease-in-out, height 1.5s ease-in-out;
 }
 header form.hide{
@@ -73,14 +72,14 @@ header form.hide{
     0%{
         opacity: 1;
         height: 185px;
-        display: flex;
-        visibility: visible;
+    }
+    50%{
+        opacity: 0.5;
+        height: 100px;
     }
     100%{
         opacity: 0;
         height: 0px;
-        display: none;
-        visibility: hidden;
     }
 }
 header form .input-group{
@@ -187,7 +186,6 @@ header form .input-group input{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    object-fit: cover;
 }
 
 /* GRID  */
@@ -208,9 +206,6 @@ grid-template-columns: 1fr 1fr;
         margin: auto;
         display: grid;
         place-items: center;
-    }
-    .results .job-card .job-map img{
-        max-height: 150px;
     }
     .results .job-card .job-link{
         margin-top: 5px;
@@ -276,3 +271,48 @@ footer{
     }
   }
   
+  /* DARK THEME  */
+  @media (prefers-color-scheme: dark){
+    :root{
+        --main-clr: #fff;
+        --light-clr: #fff;
+        --orange-clr: #ffc107;
+        --sand-clr: #f9d8b1;
+        --dark-clr: rgb(21, 21, 21);
+        --dark-light-clr: rgb(41, 41, 41);
+    }
+    body{
+        background: var(--dark-clr);
+    }
+    header{
+        background: var(--dark-clr);
+    }
+    header form button{
+        background: var(--dark-light-clr);
+        color: #fff;
+        box-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    }
+    .results .job-count{
+        color: #fff;
+    }
+    .results .job-card{
+        background: var(--dark-clr);
+        box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.8);
+    }
+    
+    .results .job-card .job-map{
+        background: var(--dark-clr);
+    }
+    .results .job-card .job-link a{
+        background: var(--dark-clr);
+        box-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+
+    }
+    .results .job-card .job-link a{
+        
+        background: var(--dark-light-clr);
+    }
+    footer{
+        background: var(--dark-clr);
+    }
+  }
